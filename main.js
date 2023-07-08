@@ -8,6 +8,8 @@ NAVANSHU
 
 veeraj
 
+daddy
+
 const moveLeft = () => {
   content.scrollBy({
     left: 200,
