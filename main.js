@@ -2,7 +2,13 @@ const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 const content = document.getElementById("categories-content");
 
+TEST TEXT POOJA
 
+NAVANSHU
+
+veeraj
+
+daddy
 
 const moveLeft = () => {
   content.scrollBy({
