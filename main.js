@@ -4,6 +4,8 @@ const content = document.getElementById("categories-content");
 
 TEST TEXT POOJA
 
+NAVANSHU
+
 const moveLeft = () => {
   content.scrollBy({
     left: 200,
