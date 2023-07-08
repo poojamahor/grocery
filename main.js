@@ -2,6 +2,8 @@ const prevBtn = document.getElementById("prev-btn");
 const nextBtn = document.getElementById("next-btn");
 const content = document.getElementById("categories-content");
 
+TEST TEXT POOJA
+
 const moveLeft = () => {
   content.scrollBy({
     left: 200,
