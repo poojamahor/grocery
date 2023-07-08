@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GrocerySite</title>
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Diphylleia&family=PT+Serif:ital,wght@0,400;1,400;1,700&family=Poppins:wght@300;600&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/20ad34ad8e.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <section class="landing-section">
+      <div class="container">
+        <nav class="d-flex justify-content-between py-3 sticky-top bg-white">
+          <!-- <div class="fw-bolder text-success fs-4"><a><img class="w-25 pe-2" src="image/logo2.jpg"/></a>QuickGreen</div> -->
+          <div class="fw-bolder text-success fs-4">
+            <i class="fa fa-brands fa-envira pe-2"></i>QuickVeggies
+          </div>
+          <ul class="nav fs-5 menu-items">
+            <li class="nav-item">
+              <a class="nav-link text-success fw-bolder">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success fw-bolder">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success fw-bolder">Categories</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success fw-bolder">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-success fw-bolder">Contact</a>
+            </li>
+            <button type="button" class="btn btn-success ps-3 pe-3 fs-5">
+              Sign Up
+            </button>
+          </ul>
+        </nav>
+
+        <div class="row mt-3">
+          <div class="col-sm-12 col-md-6">
+            <h1 class="mainheading fw-bolder">
+              Make Healthy Life With
+              <span class="text-success">Fresh Grocery</span> Product<span
+                ><img class="w-25" src="image/cab-transformed.png"
+              /></span>
+            </h1>
+            <p class="fs-6 fw-bold">
+              GET the best quality and most delicious Grocery food in the world,
+              you can get them our website. Fresh Grocery every day to your
+              family
+            </p>
+            <div>
+              <button type="button" class="btn btn-success ps-3 pe-3 fs-5">
+                Shop Now
+              </button>
+              <button type="button" class="btn ps-3 pe-3 fw-bolder fs-5">
+                <i
+                  class="circle-play fa fa-sharp fa-solid fa-circle-play fs-1 pe-1"
+                  style="color: #fb9334"
+                ></i
+                ><span>Order Process</span>
+              </button>
+            </div>
+          </div>
+          <div
+            class="col-sm-12 col-md-6 position-relative d-flex justify-content-center"
+          >
+            <!-- <div class="fresh-food text-white rounded-2">
+          <img class="w-50" src="image/circleveggies-transformed.png"/>
+          <p>100% freesh food</p>   
+        </div> -->
+            <img class="main-image" src="image/main.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="container-fluid section1">
+      <div class="container my-5">
+        <div class="d-flex justify-content-between mb-5">
+          <h1 class="subheading fw-bolder">
+            Popular categories<i
+              class="fa-solid fa-fire ps-2"
+              style="color: #fb9334"
+            ></i>
+          </h1>
+          <button
+            type="button"
+            class="btn border-1 border-success fs-5 text-success fw-bold ps-3 pe-3"
+          >
+            See All
+            <i class="fa-solid fa-arrow-right-long" style="color: #fb9334"></i>
+          </button>
+        </div>
+        <div class="position-relative">
+          <button
+            class="position-absolute bg-success arrowcircleleft"
+            id="prev-btn"
+            onclick="moveRight()"
+          >
+            <i class="fa-solid fa-arrow-left-long" style="color: #fb9334"></i>
+          </button>
+          <div
+            id="categories-content"
+            class="d-flex justify-content-between gap-3 overflow-hidden"
+          >
+            <div class="position-relative">
+              <img src="image/dryfruits.jpg" alt="..." />
+              <p
+                class="dryfruties text-dark fw-bold text-center text-white fs-4"
+              >
+                DRY FRUITES
+              </p>
+            </div>
+            <div class="position-relative">
+              <img src="image/dryfruits.jpg" alt="..." />
+              <p
+                class="dryfruties text-dark fw-bold text-center text-white fs-4"
+              >
+                DRY FRUITES
+              </p>
+            </div>
+            <div class="position-relative">
+              <img src="image/dryfruits.jpg" alt="..." />
+              <p
+                class="dryfruties text-dark fw-bold text-center text-white fs-4"
+              >
+                DRY FRUITES
+              </p>
+            </div>
+            <div class="position-relative">
+              <img src="image/dryfruits.jpg" alt="..." />
+              <p
+                class="dryfruties text-dark fw-bold text-center text-white fs-4"
+              >
+                DRY FRUITES
+              </p>
+            </div>
+            <div class="position-relative">
+              <img src="image/dryfruits.jpg" alt="..." />
+              <p
+                class="dryfruties text-dark fw-bold text-center text-white fs-4"
+              >
+                DRY FRUITES
+              </p>
+            </div>
+            <div class="position-relative">
+              <img src="image/dryfruits.jpg" alt="..." />
+              <p
+                class="dryfruties text-dark fw-bold text-center text-white fs-4"
+              >
+                DRY FRUITES
+              </p>
+            </div>
+            <div class="position-relative">
+              <img src="image/dryfruits.jpg" alt="..." />
+              <p
+                class="dryfruties text-dark fw-bold text-center text-white fs-4"
+              >
+                DRY FRUITES
+              </p>
+            </div>
+            <div class="position-relative">
+              <img src="image/dryfruits.jpg" alt="..." />
+              <p
+                class="dryfruties text-dark fw-bold text-center text-white fs-4"
+              >
+                DRY FRUITES
+              </p>
+            </div>
+          </div>
+          <button
+            class="position-absolute bg-success arrowcircleright"
+            id="next-btn"
+            onclick="moveLeft()"
+          >
+            <i class="fa-solid fa-arrow-right-long" style="color: #fb9334"></i>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid section2">
+      <div class="container row">
+        <div class="col-sm-12 col-md-6 mt-5">
+          <img
+            class="w-100"
+            src="image/delivery-concept-handsome-african-american-260nw-1718757049-transformed.png"
+          />
+        </div>
+        <div class="col-sm-12 col-md-6 mt-5">
+          <h1 class="subheading fw-bolder">
+            Best quality Healthy And Fresh Grocery
+          </h1>
+          <p class="fs-6 fw-bold mt-3">
+            GET the best quality and most delicious Grocery food in the world,
+            you can get them our website. Fresh Grocery every day to your family
+          </p>
+          <ul class="list-unstyled fw-bold">
+            <li class="mb-1">
+              <i
+                class="fa fa-sharp fa-solid fa-circle-check text-success pe-2"
+              ></i
+              >Best Services than others.
+            </li>
+            <li class="mb-1">
+              <i
+                class="fa fa-sharp fa-solid fa-circle-check text-success pe-2"
+              ></i
+              >100% Organic and Natural Products.
+            </li>
+            <li class="mb-1">
+              <i
+                class="fa fa-sharp fa-solid fa-circle-check text-success pe-2"
+              ></i
+              >100% Returns and Refunds.
+            </li>
+            <li class="mb-1">
+              <i
+                class="fa fa-sharp fa-solid fa-circle-check text-success pe-2"
+              ></i
+              >User-Friendly Mobile Apps.
+            </li>
+          </ul>
+          <button type="button" class="btn btn-success ps-3 pe-3 fs-5">
+            Order Now
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid section3">
+      <div class="container mt-5">
+        <h1 class="subheading fw-bolder text-center">
+          Enjoy Our Healthy And Fresh<br />
+          Grocery Items
+        </h1>
+        <div class="d-flex gap-2 flex-wrap mt-5">
+          <button
+            type="button"
+            class="btn border-1 border-success fs-5 text-success fw-bold ps-3 pe-3 me-4"
+          >
+            All Items
+          </button>
+          <button
+            type="button"
+            class="btn border-1 border-success fs-5 text-success fw-bold ps-3 pe-3 me-4"
+          >
+            Vegetables
+          </button>
+          <button type="button" class="btn btn-success ps-3 pe-3 fs-5 me-4">
+            Spices
+          </button>
+          <button
+            type="button"
+            class="btn border-1 border-success fs-5 text-success fw-bold ps-3 pe-3 me-4"
+          >
+            Fresh Fruites
+          </button>
+          <button
+            type="button"
+            class="btn border-1 border-success fs-5 text-success fw-bold ps-3 pe-3"
+          >
+            Fresh Nuts
+          </button>
+        </div>
+        <div class="d-flex justify-content-between mt-5 gap-4 flex-wrap">
+          <div class="spicescard">
+            <img
+              src="image/blackpaper-transformed.png"
+              class="card-img"
+              alt="..."
+            />
+
+            <h5 class="fw-bold fs-4 text-center">BLACK PAPER</h5>
+            <p class="text-center">100grams &nbsp; &nbsp; $14.70 USD</p>
+            <p class="text-center">
+              <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+              <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+              <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+              <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+              <i class="fa-regular fa-star" style="color: #fdb930"></i>
+              (1.2k Reviews)
+            </p>
+            <button
+              type="button"
+              class="btn border-1 border-success fs-5 text-success fw-bold ps-4 pe-4"
+            >
+              ADD TO CART
+            </button>
+          </div>
+          <div class="spicescard">
+            <img
+              src="image/blackpaper-transformed.png"
+              class="card-img"
+              alt="..."
+            />
+
+            <h5 class="fw-bold fs-4 text-center">BLACK PAPER</h5>
+            <p class="text-center">100grams &nbsp; &nbsp; $14.70 USD</p>
+            <p class="text-center">
+              <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+              <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+              <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+              <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+              <i class="fa-regular fa-star" style="color: #fdb930"></i>
+              (1.2k Reviews)
+            </p>
+            <button
+              type="button"
+              class="btn border-1 border-success fs-5 text-success fw-bold ps-4 pe-4"
+            >
+              ADD TO CART
+            </button>
+          </div>
+          <div class="spicescard">
+            <img
+              src="image/blackpaper-transformed.png"
+              class="card-img"
+              alt="..."
+            />
+
+            <h5 class="fw-bold fs-4 text-center">BLACK PAPER</h5>
+            <p class="text-center">100grams &nbsp; &nbsp; $14.70 USD</p>
+            <p class="text-center">
+              <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+              <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+              <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+              <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+              <i class="fa-regular fa-star" style="color: #fdb930"></i>
+              (1.2k Reviews)
+            </p>
+            <button
+              type="button"
+              class="btn border-1 border-success fs-5 text-success fw-bold ps-4 pe-4"
+            >
+              ADD TO CART
+            </button>
+          </div>
+        </div>
+        <div class="text-center">
+          <button
+            type="button"
+            class="btn border-1 border-success fs-5 text-success fw-bold ps-3 pe-3 me-4 mt-5"
+          >
+            View All Products
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid">
+      <div class="container">
+        <div class="row mt-3">
+          <div class="col-sm-12 col-md-6 mt-5">
+            <h1 class="subheading fw-bolder">
+              Why We're Best Quality Grocery Shopper
+            </h1>
+            <p class="fs-6 fw-bold mt-3">
+              GET the best quality and most delicious Grocery food in the world,
+              you can get them our website. Fresh Grocery every day to your
+              family
+            </p>
+            <div>
+              <p class="animationpara rounded-2 fw-bold fs-5 mt-4">
+                <span class="animatedicons"
+                  ><i
+                    class="fa-solid fa-truck-fast fa-shake"
+                    style="color: #f0f2f5"
+                  ></i></span
+                >Extra Fastest Delivery
+              </p>
+              <p class="rounded-2 fw-bold fs-5 mt-3">
+                <span class="animatedicons"
+                  ><i
+                    class="fa-solid fa-map-location fa-shake"
+                    style="color: #f0f2f5"
+                  ></i></span
+                >Track And Manage Order
+              </p>
+              <p class="rounded-2 fw-bold fs-5 mt-3">
+                <span class="animatedicons"
+                  ><i
+                    class="fa-solid fa-headphones fa-shake"
+                    style="color: #ffffff"
+                  ></i></span
+                >Customer Support
+              </p>
+              <p class="rounded-2 fw-bold fs-5 mt-3">
+                <span class="animatedicons"
+                  ><i
+                    class="fa-sharp fa-solid fa-circle-dollar-to-slot fa-shake"
+                    style="color: #f7f7f8"
+                  ></i></span
+                >Compititive Price
+              </p>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-6">
+            <img
+              class="w-100"
+              src="image/delivery-concept-handsome-african-american-260nw-1718757049-transformed.png"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid section4">
+      <div class="container mt-5 mb-5">
+        <h1 class="subheading fw-bolder">
+          What Our Beloved Customers <br />
+          Say About Us<i
+            class="fa-sharp fa-solid fa-face-smile text-success ps-3"
+          ></i>
+        </h1>
+
+        <div class="d-flex flex-wrap gap-4 mt-5">
+          <div class="customer">
+            <h4 class="fw-bold text-muted">Farhan Rio</h4>
+            <h6>Happy Customer</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              incidunt autem vitae tempore similique debitis fugiat earum
+              laborum deleniti quae quod minima voluptate repellat, quam cumque
+              tenetur rem velit nihil?
+            </p>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+          </div>
+          <div class="customer bg-success text-white">
+            <div class="d-flex gap-3">
+              <img
+                class="customerimg"
+                src="image/customerface-transformed.png"
+              />
+              <div>
+                <h4 class="fw-bold">Farhan Rio</h4>
+                <h6>Happy Customer</h6>
+              </div>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              incidunt autem vitae tempore similique debitis fugiat earum
+              laborum deleniti quae quod minima voluptate repellat, quam cumque
+              tenetur rem velit nihil?
+            </p>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+          </div>
+          <div class="customer">
+            <h4 class="fw-bold text-muted">Farhan Rio</h4>
+            <h6>Happy Customer</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              incidunt autem vitae tempore similique debitis fugiat earum
+              laborum deleniti quae quod minima voluptate repellat, quam cumque
+              tenetur rem velit nihil?
+            </p>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+            <i class="fa fa-solid fa-star" style="color: #fdb930"></i>
+          </div>
+        </div>
+        <div class="row mt-5">
+          <div class="col-sm-12 col-md-6 mt-5">
+            <h1 class="subheading fw-bolder">
+              Download Our Grocery Mobile App And Save Time
+            </h1>
+            <p class="fs-6 fw-bold mt-3">
+              Our Grocery mobile app makes it easy to shop for groceries on the
+              go. You can browse our selection of products, create a shopping
+              list, and order groceries for pickup or delivery.
+            </p>
+            <img class="w-75" src="image/App-and-Google-btn.png" />
+          </div>
+          <div class="col-sm-12 col-md-6 mt-5">
+            <img class="w-100" src="image/mobileimg-transformed.png" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="container-fluid bg-success">
+      <div class="container py-5">
+        <div class="row">
+          <div class="col-sm-12 col-md-3 text-white">
+            <div class="fw-bold fs-5 mb-3">
+              <i class="fa fa-brands fa-envira pe-2"></i>QuickVeggies
+            </div>
+            <p class="my-3">
+              Lorem, ipsum dolor sit amet consectetur adipisicing amet
+              adipisicing elit.
+            </p>
+            <div class="mt-4">
+              <i
+                class="fa-brands fa-square-facebook fs-5"
+                style="color: #f7f7f8"
+              ></i>
+              <i
+                class="fa-brands fa-square-twitter fs-5"
+                style="color: #ffffff"
+              ></i>
+              <i class="fa-brands fa-instagram fs-5" style="color: #ffffff"></i>
+              <i class="fa-brands fa-linkedin fs-5" style="color: #ffffff"></i>
+            </div>
+          </div>
+          <div class="col-sm-12 col-md-9 text-white d-flex justify-content-between flex-wrap gap-2">
+            <div>
+              <div class="fw-bold fs-5 mb-3">About</div>
+              <p>About Us</p>
+              <p>Why Us</p>
+              <p>Security</p>
+              <p>Testimonial</p>
+            </div>
+            <div>
+              <div class="fw-bold fs-5 mb-3">categories</div>
+              <p>Vegetables</p>
+              <p>Fresh Fruites</p>
+              <p>Dry Fruites</p>
+              <p>Dairy Products</p>
+            </div>
+            <div>
+              <div class="fw-bold fs-5 mb-3">Help</div>
+              <p>Account</p>
+              <p>Support Center</p>
+              <p>Privacy Policy</p>
+              <p>Terms & Conditions</p>
+            </div>
+            <div>
+              <div class="fw-bold fs-5 mb-3">Contact Us</div>
+              <p>
+                <i class="fa-solid fa-phone" style="color: #ffffff"></i>
+                +1(406)555-0122
+              </p>
+              <p>
+                <i class="fa-solid fa-envelope" style="color: #ffffff"></i>
+                example@gmail.com
+              </p>
+              <p>
+                <i
+                  class="fa-sharp fa-solid fa-location-dot pe-2"
+                  style="color: #ffffff"
+                ></i
+                >2464 Royal Ln. Mesa,<br />&nbsp; &nbsp;New Jersey 45362
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr class="text-white" />
+
+      <p class="text-white text-center">@2023 All Copyrights Reserved.</p>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>

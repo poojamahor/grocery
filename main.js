@@ -1,0 +1,18 @@
+const prevBtn = document.getElementById("prev-btn");
+const nextBtn = document.getElementById("next-btn");
+const content = document.getElementById("categories-content");
+
+const moveLeft = () => {
+  content.scrollBy({
+    left: 200,
+    behavior: "smooth"
+  });
+};
+
+const moveRight = () => {
+  content.scrollBy({
+    left: -200,
+    behavior: "smooth"
+  });
+};
+
